@@ -115,13 +115,6 @@ TTS             Capacitor Text-to-Speech
 
 ---
 
-## 🔒 Gizlilik & Yasal
-
-- [Gizlilik Politikası](./privacy-policy.md)
-- [Hesap Silme](https://sessizmuezzin.github.io/wordforge-privacy/delete.html)
-
----
-
 ## 📬 İletişim
 
 Geri bildirim, destek veya iş birliği için:
