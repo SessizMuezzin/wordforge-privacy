@@ -38,10 +38,10 @@
 
 <div align="center">
 
-<img src="assets/imag1.jpeg" width="24%"/> &nbsp;
-<img src="assets/imae2.jpeg" width="24%"/> &nbsp;
-<img src="assets/imae3.jpeg" width="24%"/> &nbsp;
-<img src="assets/imge4.jpeg" width="24%"/>
+<img src="assets/image1.jpeg" width="24%"/> &nbsp;
+<img src="assets/image2.jpeg" width="24%"/> &nbsp;
+<img src="assets/image3.jpeg" width="24%"/> &nbsp;
+<img src="assets/image4.jpeg" width="24%"/>
 
 </div>
 
