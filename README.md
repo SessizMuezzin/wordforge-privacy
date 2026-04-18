@@ -38,7 +38,16 @@
 
 <div align="center">
 
-<img src="assets/screenshot1.png" width="48%"/> &nbsp; <img src="assets/screenshot2.png" width="48%"/>
+<img src="assets/screenshot1.png" width="24%"/> &nbsp;
+<img src="assets/screenshot2.png" width="24%"/> &nbsp;
+<img src="assets/screenshot3.png" width="24%"/> &nbsp;
+<img src="assets/screenshot4.png" width="24%"/>
+
+</div>
+
+<div align="center">
+
+*Ana Ekran &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Etkinlik Modları &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gelişim Raporu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ayarlar*
 
 </div>
 
@@ -65,10 +74,10 @@
 
 ### 📚 İçerik
 
-- **8.000+** kelime — Oxford Word Lists A1–C2 hizalı
+- **8.000+** kelime — Oxford Word Lists A1–C1 hizalı
 - **3 hedef dil** — İngilizce 🇬🇧 · Almanca 🇩🇪 · Fransızca 🇫🇷
 - **4 arayüz dili** — Türkçe · İngilizce · Almanca · Fransızca
-- CEFR seviyelerine göre sınıflandırılmış kelimeler (A1–C2)
+- CEFR seviyelerine göre sınıflandırılmış kelimeler (A1–C1)
 - Kategorilere göre filtreleme: Günlük, İş Hayatı, Teknoloji, Seyahat ve daha fazlası
 
 ### 🏆 Motivasyon Sistemi
