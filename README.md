@@ -74,10 +74,10 @@
 
 ### 📚 İçerik
 
-- **8.000+** kelime — Oxford Word Lists A1–C1 hizalı
+- **8.000+** kelime — Oxford Word Lists A1–C2 hizalı
 - **3 hedef dil** — İngilizce 🇬🇧 · Almanca 🇩🇪 · Fransızca 🇫🇷
 - **4 arayüz dili** — Türkçe · İngilizce · Almanca · Fransızca
-- CEFR seviyelerine göre sınıflandırılmış kelimeler (A1–C1)
+- CEFR seviyelerine göre sınıflandırılmış kelimeler (A1–C2)
 - Kategorilere göre filtreleme: Günlük, İş Hayatı, Teknoloji, Seyahat ve daha fazlası
 
 ### 🏆 Motivasyon Sistemi
