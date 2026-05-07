@@ -1,68 +1,232 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WordRune - Hesap ve Veri Silme</title>
-  <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.7; }
-    h1 { color: #1a1a2e; }
-    h2 { color: #444; margin-top: 30px; }
-    .steps { background: #f5f5f5; border-left: 4px solid #4a90e2; padding: 15px 20px; border-radius: 4px; }
-    .steps ol { margin: 0; padding-left: 20px; }
-    .steps li { margin-bottom: 8px; }
-    .warning { background: #fff3cd; border-left: 4px solid #ffc107; padding: 15px 20px; border-radius: 4px; margin: 20px 0; }
-    a { color: #4a90e2; }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Account Deletion — WordRune</title>
+<meta name="description" content="How to delete your WordRune account and all associated personal data." />
+<style>
+  :root {
+    --bg: #0f0f17; --surface: #1a1a26; --surface-2: #232333;
+    --text: #e8e8f0; --text-dim: #a0a0b8;
+    --accent: #a78bfa; --accent-2: #8b5cf6;
+    --danger: #f87171; --border: #2d2d40; --radius: 12px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 760px; margin: 0 auto; padding: 32px 24px 96px; }
+  header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 16px 0 32px; border-bottom: 1px solid var(--border); margin-bottom: 32px;
+  }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand-mark {
+    width: 40px; height: 40px; border-radius: 10px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; color: white; font-size: 18px;
+  }
+  .brand-name { font-size: 18px; font-weight: 600; }
+  .brand-sub { font-size: 12px; color: var(--text-dim); }
+  .lang-toggle {
+    display: flex; gap: 4px; background: var(--surface);
+    border: 1px solid var(--border); border-radius: 999px; padding: 4px;
+  }
+  .lang-toggle button {
+    border: none; background: transparent; color: var(--text-dim);
+    padding: 6px 14px; border-radius: 999px; font-size: 13px;
+    cursor: pointer; font-weight: 500;
+  }
+  .lang-toggle button.active { background: var(--accent); color: white; }
+  h1 { font-size: 30px; font-weight: 700; line-height: 1.25; margin-bottom: 8px; letter-spacing: -0.02em; }
+  .meta { color: var(--text-dim); font-size: 14px; margin-bottom: 28px; }
+  h2 { font-size: 19px; font-weight: 600; margin-top: 32px; margin-bottom: 12px; }
+  p, li { font-size: 15px; }
+  p { margin-bottom: 14px; }
+  ul, ol { padding-left: 22px; margin-bottom: 14px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  strong { font-weight: 600; }
+  .step-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 20px; margin: 20px 0;
+  }
+  .danger-card {
+    background: rgba(248, 113, 113, 0.08); border: 1px solid rgba(248, 113, 113, 0.3);
+    border-left: 3px solid var(--danger); border-radius: var(--radius);
+    padding: 16px 18px; margin: 20px 0;
+  }
+  .contact-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 20px; margin-top: 24px;
+  }
+  .back-link {
+    display: inline-block; margin-bottom: 16px; color: var(--text-dim);
+    font-size: 13px;
+  }
+  footer {
+    margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--border);
+    color: var(--text-dim); font-size: 13px; text-align: center;
+  }
+  .lang-section { display: none; }
+  .lang-section.active { display: block; }
+</style>
 </head>
 <body>
-  <h1>Hesap ve Veri Silme</h1>
-  <p><strong>Son güncelleme:</strong> 29 Mart 2026</p>
+<div class="container">
 
-  <p>WordRune olarak kullanıcılarımızın kişisel verileri üzerinde tam kontrol sahibi olmasını sağlıyoruz. Hesabınızı ve tüm verilerinizi aşağıdaki yöntemlerle silebilirsiniz.</p>
+  <header>
+    <div class="brand">
+      <div class="brand-mark">W</div>
+      <div>
+        <div class="brand-name">WordRune</div>
+        <div class="brand-sub">Account Deletion</div>
+      </div>
+    </div>
+    <div class="lang-toggle">
+      <button id="btn-en" class="active" onclick="switchLang('en')">EN</button>
+      <button id="btn-tr" onclick="switchLang('tr')">TR</button>
+    </div>
+  </header>
 
-  <h2>Uygulama İçinden Hesap Silme</h2>
-  <div class="steps">
-    <ol>
-      <li>WordRune uygulamasını açın</li>
-      <li>Ana ekranda profil ikonuna dokunun</li>
-      <li><strong>Ayarlar</strong> bölümüne gidin</li>
-      <li><strong>"Hesabı Sil"</strong> seçeneğine dokunun</li>
-      <li>Onay iletişim kutusunda <strong>"Evet, Sil"</strong> butonuna basın</li>
-    </ol>
-  </div>
+  <!-- ============ ENGLISH ============ -->
+  <section id="lang-en" class="lang-section active">
+    <a class="back-link" href="index.html">← Back to Privacy Policy</a>
+    <h1>How to Delete Your Account</h1>
+    <p class="meta">Last Updated: May 7, 2026</p>
 
-  <div class="warning">
-    <strong>Dikkat:</strong> Hesap silme işlemi geri alınamaz. Tüm ilerleme verileriniz, rozetleriniz ve istatistikleriniz kalıcı olarak silinecektir.
-  </div>
+    <p>You can permanently delete your <strong>WordRune</strong> account and all personal data at any time. We offer two methods:</p>
 
-  <h2>E-posta ile Silme Talebi</h2>
-  <p>Uygulama üzerinden silme işlemi yapamıyorsanız bize e-posta göndererek talep edebilirsiniz:</p>
-  <ul>
-    <li><strong>E-posta:</strong> yapayakil38@gmail.com</li>
-    <li><strong>Konu:</strong> Hesap Silme Talebi</li>
-    <li><strong>İçerik:</strong> Google hesabınızla kayıtlı e-posta adresinizi belirtin</li>
-  </ul>
-  <p>Talebiniz <strong>7 iş günü</strong> içinde işleme alınır.</p>
+    <h2>Option 1 — Delete from within the App (Recommended)</h2>
+    <div class="step-card">
+      <ol>
+        <li>Open the <strong>WordRune</strong> app and sign in to your account</li>
+        <li>Go to the <strong>Profile</strong> tab</li>
+        <li>Tap <strong>Settings</strong></li>
+        <li>Scroll to the bottom and tap <strong>Delete Account</strong></li>
+        <li>Confirm your decision when prompted</li>
+      </ol>
+      <p style="margin-bottom: 0; color: var(--text-dim); font-size: 14px;">Your account will be removed immediately and all data will be permanently deleted within 30 days.</p>
+    </div>
 
-  <h2>Silinen Veriler</h2>
-  <p>Hesabınız silindiğinde aşağıdaki veriler kalıcı olarak kaldırılır:</p>
-  <ul>
-    <li>Google hesap bağlantısı ve kimlik bilgileri</li>
-    <li>Tüm öğrenme ilerleme verileri (XP, seviye, seri)</li>
-    <li>Öğrenilen kelime listesi</li>
-    <li>Rozet ve başarı verileri</li>
-    <li>Uygulama istatistikleri</li>
-  </ul>
+    <h2>Option 2 — Request Deletion by Email</h2>
+    <p>If you cannot access the app, send us an email:</p>
+    <div class="step-card">
+      <p style="margin-bottom: 6px;"><strong>To:</strong> <a href="mailto:yapayakil38@gmail.com?subject=Account%20Deletion%20Request">yapayakil38@gmail.com</a></p>
+      <p style="margin-bottom: 6px;"><strong>Subject:</strong> Account Deletion Request</p>
+      <p style="margin-bottom: 0;"><strong>Body:</strong> Include the email address associated with your WordRune account.</p>
+    </div>
+    <p>We will process your request within <strong>7 business days</strong> and notify you upon completion.</p>
 
-  <h2>Kısmi Veri Silme</h2>
-  <p>Hesabınızı silmeden yalnızca belirli verileri silmek istiyorsanız:</p>
-  <ul>
-    <li><strong>İlerleme sıfırlama:</strong> Ayarlar → "İlerlemeyi Sıfırla" seçeneğini kullanın</li>
-    <li><strong>Belirli veri silme:</strong> yapayakil38@gmail.com adresine talebinizi iletin</li>
-  </ul>
+    <h2>What Gets Deleted</h2>
+    <p>When you delete your account, the following data is permanently removed:</p>
+    <ul>
+      <li>Account credentials (email, display name, UID)</li>
+      <li>Learning data (words, progress, badges, XP, levels, CEFR level)</li>
+      <li>Custom word lists and favorites</li>
+      <li>Daily streaks, study history, and statistics</li>
+      <li>App preferences and settings</li>
+    </ul>
 
-  <hr>
-  <p><a href="index.html">← Gizlilik Politikasına Dön</a></p>
+    <h2>What May Be Retained</h2>
+    <p>For legal, security, or service-improvement purposes, we may retain:</p>
+    <ul>
+      <li>Anonymized, aggregated usage statistics that cannot be linked to you</li>
+      <li>Records required by law (e.g., financial records, if applicable)</li>
+    </ul>
+
+    <div class="danger-card">
+      <strong>⚠️ This action is irreversible.</strong> Once deleted, your account and learning progress cannot be recovered. If you only want to take a break, consider simply signing out instead.
+    </div>
+
+    <h2>Need Help?</h2>
+    <div class="contact-card">
+      <p style="margin-bottom: 6px;"><strong>Email:</strong> <a href="mailto:yapayakil38@gmail.com">yapayakil38@gmail.com</a></p>
+      <p style="margin-bottom: 0;">We aim to respond within 7 business days.</p>
+    </div>
+  </section>
+
+  <!-- ============ TURKISH ============ -->
+  <section id="lang-tr" class="lang-section">
+    <a class="back-link" href="index.html">← Gizlilik Politikasına Dön</a>
+    <h1>Hesabınızı Nasıl Silersiniz</h1>
+    <p class="meta">Son Güncelleme: 7 Mayıs 2026</p>
+
+    <p><strong>WordRune</strong> hesabınızı ve tüm kişisel verilerinizi istediğiniz zaman kalıcı olarak silebilirsiniz. İki yöntem sunuyoruz:</p>
+
+    <h2>Seçenek 1 — Uygulama İçinden Silme (Önerilen)</h2>
+    <div class="step-card">
+      <ol>
+        <li><strong>WordRune</strong> uygulamasını açın ve hesabınıza giriş yapın</li>
+        <li><strong>Profil</strong> sekmesine gidin</li>
+        <li><strong>Ayarlar</strong>'a dokunun</li>
+        <li>En aşağı kaydırın ve <strong>Hesabı Sil</strong> seçeneğine dokunun</li>
+        <li>Onay istendiğinde kararınızı doğrulayın</li>
+      </ol>
+      <p style="margin-bottom: 0; color: var(--text-dim); font-size: 14px;">Hesabınız anında kaldırılır ve tüm verileriniz 30 gün içinde kalıcı olarak silinir.</p>
+    </div>
+
+    <h2>Seçenek 2 — E-posta ile Silme Talebi</h2>
+    <p>Uygulamaya erişiminiz yoksa bize e-posta gönderin:</p>
+    <div class="step-card">
+      <p style="margin-bottom: 6px;"><strong>Alıcı:</strong> <a href="mailto:yapayakil38@gmail.com?subject=Hesap%20Silme%20Talebi">yapayakil38@gmail.com</a></p>
+      <p style="margin-bottom: 6px;"><strong>Konu:</strong> Hesap Silme Talebi</p>
+      <p style="margin-bottom: 0;"><strong>İçerik:</strong> WordRune hesabınızla ilişkili e-posta adresini ekleyin.</p>
+    </div>
+    <p>Talebiniz <strong>7 iş günü</strong> içinde işleme alınır ve tamamlandığında size bildirilir.</p>
+
+    <h2>Silinen Veriler</h2>
+    <p>Hesabınızı sildiğinizde aşağıdaki veriler kalıcı olarak kaldırılır:</p>
+    <ul>
+      <li>Hesap kimlik bilgileri (e-posta, görünen ad, UID)</li>
+      <li>Öğrenme verileri (kelimeler, ilerleme, rozetler, XP, seviyeler, CEFR seviyesi)</li>
+      <li>Özel kelime listeleri ve favoriler</li>
+      <li>Günlük seriler, çalışma geçmişi ve istatistikler</li>
+      <li>Uygulama tercihleri ve ayarları</li>
+    </ul>
+
+    <h2>Saklanabilecek Veriler</h2>
+    <p>Yasal, güvenlik veya hizmet iyileştirme amaçlarıyla saklayabileceklerimiz:</p>
+    <ul>
+      <li>Sizinle ilişkilendirilemeyen anonim, toplulaştırılmış kullanım istatistikleri</li>
+      <li>Yasaların gerektirdiği kayıtlar (örn. varsa finansal kayıtlar)</li>
+    </ul>
+
+    <div class="danger-card">
+      <strong>⚠️ Bu işlem geri alınamaz.</strong> Silindikten sonra hesabınız ve öğrenme ilerlemeniz kurtarılamaz. Sadece ara vermek istiyorsanız, silmek yerine çıkış yapmayı düşünün.
+    </div>
+
+    <h2>Yardım Lazım Mı?</h2>
+    <div class="contact-card">
+      <p style="margin-bottom: 6px;"><strong>E-posta:</strong> <a href="mailto:yapayakil38@gmail.com">yapayakil38@gmail.com</a></p>
+      <p style="margin-bottom: 0;">7 iş günü içinde yanıt vermeyi hedefliyoruz.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 WordRune. All rights reserved. &nbsp;·&nbsp; <a href="index.html">Privacy Policy</a></p>
+  </footer>
+</div>
+
+<script>
+  function switchLang(lang) {
+    document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+    document.getElementById('lang-tr').classList.toggle('active', lang === 'tr');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
+    document.documentElement.lang = lang;
+    try { localStorage.setItem('wordrune_lang', lang); } catch (e) {}
+  }
+  try {
+    const saved = localStorage.getItem('wordrune_lang');
+    if (saved === 'tr') switchLang('tr');
+    else if (!saved && (navigator.language || '').toLowerCase().startsWith('tr')) switchLang('tr');
+  } catch (e) {}
+</script>
 </body>
 </html>
