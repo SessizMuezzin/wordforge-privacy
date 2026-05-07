@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="index, follow" />
+<title>Terms of Use — WordRune</title>
+<meta name="description" content="WordRune Terms of Use, including subscription terms for WordRune Pro." />
+<style>
+  :root {
+    --bg: #0f0f17;
+    --surface: #1a1a26;
+    --text: #e8e8f0;
+    --text-dim: #a0a0b8;
+    --accent: #a78bfa;
+    --accent-2: #8b5cf6;
+    --border: #2d2d40;
+    --radius: 12px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 820px; margin: 0 auto; padding: 32px 24px 96px; }
+  header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 16px 0 32px; border-bottom: 1px solid var(--border); margin-bottom: 32px;
+  }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand-mark {
+    width: 40px; height: 40px; border-radius: 10px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; color: white; font-size: 18px;
+  }
+  .brand-name { font-size: 18px; font-weight: 600; }
+  .brand-sub { font-size: 12px; color: var(--text-dim); }
+  .lang-toggle {
+    display: flex; gap: 4px; background: var(--surface);
+    border: 1px solid var(--border); border-radius: 999px; padding: 4px;
+  }
+  .lang-toggle button {
+    border: none; background: transparent; color: var(--text-dim);
+    padding: 6px 14px; border-radius: 999px; font-size: 13px;
+    cursor: pointer; font-weight: 500;
+  }
+  .lang-toggle button.active { background: var(--accent); color: white; }
+  h1 {
+    font-size: 32px; font-weight: 700; line-height: 1.25;
+    margin-bottom: 8px; letter-spacing: -0.02em;
+  }
+  .meta { color: var(--text-dim); font-size: 14px; margin-bottom: 32px; }
+  h2 {
+    font-size: 20px; font-weight: 600; margin-top: 36px; margin-bottom: 12px;
+    letter-spacing: -0.01em;
+  }
+  h3 { font-size: 16px; font-weight: 600; margin-top: 20px; margin-bottom: 8px; }
+  p, li { font-size: 15px; }
+  p { margin-bottom: 14px; }
+  ul, ol { padding-left: 22px; margin-bottom: 14px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  strong { color: var(--text); font-weight: 600; }
+  .callout {
+    background: var(--surface); border: 1px solid var(--border);
+    border-left: 3px solid var(--accent); border-radius: var(--radius);
+    padding: 16px 18px; margin: 20px 0;
+  }
+  .platform-note {
+    display: inline-block; font-size: 11px; font-weight: 600;
+    padding: 2px 8px; border-radius: 999px; margin-right: 6px;
+    text-transform: uppercase; letter-spacing: 0.04em;
+  }
+  .platform-ios { background: rgba(167, 139, 250, 0.15); color: var(--accent); }
+  .platform-android { background: rgba(61, 220, 132, 0.15); color: #3DDC84; }
+  .platform-both { background: rgba(160, 160, 184, 0.15); color: var(--text-dim); }
+  .contact-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 20px; margin-top: 24px;
+  }
+  footer {
+    margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--border);
+    color: var(--text-dim); font-size: 13px; text-align: center;
+  }
+  .lang-section { display: none; }
+  .lang-section.active { display: block; }
+  @media (max-width: 600px) {
+    h1 { font-size: 26px; }
+    h2 { font-size: 18px; }
+    .container { padding: 20px 16px 64px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="brand">
+      <div class="brand-mark">W</div>
+      <div>
+        <div class="brand-name">WordRune</div>
+        <div class="brand-sub">Terms of Use</div>
+      </div>
+    </div>
+    <div class="lang-toggle">
+      <button id="btn-en" class="active" onclick="switchLang('en')">EN</button>
+      <button id="btn-tr" onclick="switchLang('tr')">TR</button>
+    </div>
+  </header>
+
+  <!-- ============ ENGLISH ============ -->
+  <section id="lang-en" class="lang-section active">
+    <h1>Terms of Use</h1>
+    <p class="meta">Effective Date: May 7, 2026 &nbsp;·&nbsp; Last Updated: May 7, 2026 &nbsp;·&nbsp; Applies to iOS and Android</p>
+
+    <p>These Terms of Use ("Terms") govern your access to and use of <strong>WordRune</strong> ("the App", "we", "our") on iOS and Android. By downloading, installing, or using the App, you agree to be bound by these Terms. If you do not agree, do not use the App.</p>
+
+    <h2>1. Eligibility</h2>
+    <p>You must be at least 13 years old (or the minimum age required in your jurisdiction) to use WordRune. By using the App, you represent that you meet this age requirement and that you have the legal capacity to enter into these Terms.</p>
+
+    <h2>2. License to Use the App</h2>
+    <p>WordRune grants you a personal, non-exclusive, non-transferable, revocable license to install and use the App for personal, non-commercial purposes, in accordance with these Terms and the rules of the platform from which you obtained the App (Apple App Store or Google Play).</p>
+
+    <h2>3. User Account</h2>
+    <p>To access certain features, you must create an account using a valid email address. You are responsible for maintaining the confidentiality of your credentials and for all activities under your account. Notify us immediately of any unauthorized use.</p>
+
+    <h2>4. Acceptable Use</h2>
+    <p>You agree not to:</p>
+    <ul>
+      <li>Reverse engineer, decompile, or disassemble the App</li>
+      <li>Use the App for any unlawful purpose or in violation of these Terms</li>
+      <li>Attempt to gain unauthorized access to other users' accounts or our systems</li>
+      <li>Upload or transmit any harmful code, viruses, or content</li>
+      <li>Interfere with or disrupt the operation of the App or our servers</li>
+      <li>Use automated tools (bots, scrapers) to access the App</li>
+    </ul>
+
+    <h2>5. Subscriptions — WordRune Pro</h2>
+
+    <h3>5.1 Subscription Overview</h3>
+    <p><strong>WordRune Pro</strong> is an auto-renewable subscription that unlocks premium features:</p>
+    <ul>
+      <li>Ad-free access to all study modes</li>
+      <li>Weekly XP charts and detailed mode statistics</li>
+      <li>Weekly goal tracking</li>
+      <li>Premium badge</li>
+    </ul>
+
+    <h3>5.2 Pricing and Billing</h3>
+    <p>Subscription pricing is displayed in the App in your local currency before purchase. The current pricing tier is <strong>Monthly</strong>, with a <strong>7-day free trial</strong> for new subscribers.</p>
+    <ul>
+      <li><span class="platform-note platform-ios">iOS</span> Payment will be charged to your <strong>Apple ID account</strong> at the confirmation of purchase, or at the end of the free trial period if applicable.</li>
+      <li><span class="platform-note platform-android">Android</span> Payment will be charged to your <strong>Google Play account</strong> at the confirmation of purchase, or at the end of the free trial period if applicable.</li>
+    </ul>
+
+    <h3>5.3 Auto-Renewal</h3>
+    <p>Subscriptions automatically renew at the same price for the same duration unless canceled at least <strong>24 hours before the end of the current billing period</strong>. Your account will be charged for renewal within 24 hours before the end of the current period.</p>
+
+    <h3>5.4 Free Trial</h3>
+    <p>Eligible users receive a <strong>7-day free trial</strong>. The free trial converts to a paid subscription unless canceled before the trial ends. If you cancel during the trial, you retain access to Pro features until the trial period ends, after which your subscription will not renew and you will not be charged.</p>
+
+    <h3>5.5 Managing or Canceling Your Subscription</h3>
+    <ul>
+      <li><span class="platform-note platform-ios">iOS</span> Manage or cancel your subscription via <strong>iOS Settings → [Your Name] → Subscriptions → WordRune</strong>. Cancellation takes effect at the end of the current billing period.</li>
+      <li><span class="platform-note platform-android">Android</span> Manage or cancel your subscription via <strong>Google Play → Account → Subscriptions → WordRune</strong>. Cancellation takes effect at the end of the current billing period.</li>
+    </ul>
+
+    <h3>5.6 Refunds</h3>
+    <p>Refunds for subscription payments are handled by the respective platform:</p>
+    <ul>
+      <li><span class="platform-note platform-ios">iOS</span> Refund requests must be submitted to Apple via <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>. WordRune cannot directly issue refunds for App Store purchases.</li>
+      <li><span class="platform-note platform-android">Android</span> Refund requests must be submitted via Google Play. WordRune cannot directly issue refunds for Google Play purchases.</li>
+    </ul>
+
+    <h3>5.7 Restoring Purchases</h3>
+    <p>If you reinstall the App or sign in on a new device, you can restore your active subscription by tapping the <strong>"Restore Purchases"</strong> button on the WordRune Pro screen.</p>
+
+    <h2>6. Advertising</h2>
+    <p>The free version of WordRune displays advertisements via Google AdMob. By using the free version, you consent to the display of advertisements within the App. WordRune Pro subscribers do not see advertisements. For details on advertising data, please see our <a href="index.html">Privacy Policy</a>.</p>
+
+    <h2>7. Intellectual Property</h2>
+    <p>WordRune and its content (including but not limited to text, graphics, logos, audio, video, software, vocabulary databases, and study materials) are owned by us or our licensors and are protected by copyright, trademark, and other intellectual property laws. You may not copy, modify, distribute, or create derivative works without our prior written permission.</p>
+
+    <h2>8. User-Generated Content</h2>
+    <p>If you create custom word lists or other content within the App, you retain ownership of that content. By using the App, you grant us a non-exclusive, royalty-free license to host, store, and display your content solely for the purpose of providing the service to you.</p>
+
+    <h2>9. Termination</h2>
+    <p>We may suspend or terminate your access to the App at any time, with or without notice, for violation of these Terms or for any other reason. You may terminate your account at any time by deleting it from within the App (see our <a href="delete.html">Account Deletion page</a>). Termination of your account does not entitle you to a refund of any unused subscription period.</p>
+
+    <h2>10. Disclaimers</h2>
+    <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. We do not guarantee that the App will be uninterrupted, error-free, or that defects will be corrected. Use of the App is at your sole risk.</p>
+
+    <h2>11. Limitation of Liability</h2>
+    <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL WORDRUNE BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS OR REVENUE, ARISING OUT OF OR RELATING TO YOUR USE OF THE APP. Our total liability for any claim arising from these Terms or the App shall not exceed the amount you paid us in the past 12 months, or the equivalent of one month's subscription, whichever is greater.</p>
+
+    <h2>12. Changes to These Terms</h2>
+    <p>We may update these Terms from time to time. The "Last Updated" date at the top reflects the most recent version. Material changes will be communicated through the App or by email. Continued use of the App after changes constitutes acceptance of the updated Terms.</p>
+
+    <h2>13. Governing Law</h2>
+    <p>These Terms are governed by the laws of the Republic of Türkiye, without regard to its conflict of law principles. Any disputes shall be resolved in the competent courts of Istanbul, Türkiye, except where mandatory consumer protection laws of your jurisdiction provide otherwise.</p>
+
+    <h2>14. Apple-Specific Terms (iOS)</h2>
+    <p><span class="platform-note platform-ios">iOS only</span></p>
+    <ul>
+      <li>These Terms are concluded between you and WordRune only, and not with Apple. Apple is not responsible for the App or its content.</li>
+      <li>Apple has no obligation to furnish any maintenance and support services with respect to the App.</li>
+      <li>Apple is not responsible for addressing any claims by you or any third party relating to the App or your possession and/or use of the App.</li>
+      <li>You acknowledge that Apple and its subsidiaries are third-party beneficiaries of these Terms and have the right to enforce these Terms against you.</li>
+      <li>You represent that you are not located in a country subject to a U.S. Government embargo and are not on any U.S. Government list of prohibited or restricted parties.</li>
+    </ul>
+
+    <h2>15. Contact</h2>
+    <div class="contact-card">
+      <p>For questions about these Terms or any other inquiries:</p>
+      <p><strong>Email:</strong> <a href="mailto:yapayakil38@gmail.com">yapayakil38@gmail.com</a></p>
+      <p style="margin-bottom: 0;"><strong>Developer:</strong> WordRune Team</p>
+    </div>
+  </section>
+
+  <!-- ============ TURKISH ============ -->
+  <section id="lang-tr" class="lang-section">
+    <h1>Kullanım Koşulları</h1>
+    <p class="meta">Yürürlük Tarihi: 7 Mayıs 2026 &nbsp;·&nbsp; Son Güncelleme: 7 Mayıs 2026 &nbsp;·&nbsp; iOS ve Android için geçerlidir</p>
+
+    <p>Bu Kullanım Koşulları ("Koşullar"), iOS ve Android'de <strong>WordRune</strong> ("Uygulama", "biz") uygulamasına erişiminizi ve kullanımınızı düzenler. Uygulamayı indirerek, kurarak veya kullanarak bu Koşulları kabul etmiş olursunuz. Kabul etmiyorsanız Uygulamayı kullanmayınız.</p>
+
+    <h2>1. Uygunluk</h2>
+    <p>WordRune'u kullanabilmek için en az 13 yaşında (veya yargı bölgenizin gerektirdiği minimum yaş) olmanız gerekir. Uygulamayı kullanarak bu yaş gereksinimini karşıladığınızı ve bu Koşulları kabul edebilecek hukuki kapasiteye sahip olduğunuzu beyan edersiniz.</p>
+
+    <h2>2. Kullanım Lisansı</h2>
+    <p>WordRune size, bu Koşullara ve Uygulamayı edindiğiniz platformun (Apple App Store veya Google Play) kurallarına uygun olarak, kişisel ve ticari olmayan amaçlarla Uygulamayı kurmak ve kullanmak için kişisel, münhasır olmayan, devredilemez ve geri alınabilir bir lisans verir.</p>
+
+    <h2>3. Kullanıcı Hesabı</h2>
+    <p>Bazı özelliklere erişmek için geçerli bir e-posta adresi ile hesap oluşturmanız gerekir. Kimlik bilgilerinizin gizliliğini korumak ve hesabınız altındaki tüm faaliyetlerden sorumlusunuz. Yetkisiz kullanım durumunda derhal bizi bilgilendirin.</p>
+
+    <h2>4. Kabul Edilebilir Kullanım</h2>
+    <p>Aşağıdakileri yapmamayı kabul edersiniz:</p>
+    <ul>
+      <li>Uygulamayı tersine mühendislik yapmak, kaynak koda dönüştürmek</li>
+      <li>Uygulamayı yasadışı amaçlarla veya bu Koşullara aykırı olarak kullanmak</li>
+      <li>Diğer kullanıcıların hesaplarına veya sistemlerimize yetkisiz erişim girişiminde bulunmak</li>
+      <li>Zararlı kod, virüs veya içerik yüklemek veya iletmek</li>
+      <li>Uygulamanın veya sunucularımızın çalışmasını engellemek veya bozmak</li>
+      <li>Uygulamaya erişmek için otomatik araçlar (botlar, scraperlar) kullanmak</li>
+    </ul>
+
+    <h2>5. Abonelikler — WordRune Pro</h2>
+
+    <h3>5.1 Abonelik Genel Bakış</h3>
+    <p><strong>WordRune Pro</strong>, premium özelliklerin kilidini açan otomatik yenilenen bir aboneliktir:</p>
+    <ul>
+      <li>Tüm çalışma modlarına reklamsız erişim</li>
+      <li>Haftalık XP grafikleri ve detaylı mod istatistikleri</li>
+      <li>Haftalık hedef takibi</li>
+      <li>Premium rozeti</li>
+    </ul>
+
+    <h3>5.2 Fiyatlandırma ve Faturalama</h3>
+    <p>Abonelik fiyatı, satın alma öncesinde Uygulama içinde yerel para biriminizde gösterilir. Mevcut fiyat planı <strong>Aylık</strong>, yeni aboneler için <strong>7 gün ücretsiz deneme</strong> ile sunulur.</p>
+    <ul>
+      <li><span class="platform-note platform-ios">iOS</span> Ödeme, satın almanın onaylanmasında veya geçerliyse ücretsiz deneme süresinin sonunda <strong>Apple ID hesabınızdan</strong> tahsil edilir.</li>
+      <li><span class="platform-note platform-android">Android</span> Ödeme, satın almanın onaylanmasında veya geçerliyse ücretsiz deneme süresinin sonunda <strong>Google Play hesabınızdan</strong> tahsil edilir.</li>
+    </ul>
+
+    <h3>5.3 Otomatik Yenileme</h3>
+    <p>Abonelikler, mevcut faturalama döneminin bitiminden en az <strong>24 saat önce iptal edilmediği takdirde</strong>, aynı süre için aynı fiyatla otomatik olarak yenilenir. Mevcut dönemin bitiminden 24 saat önce hesabınızdan yenileme bedeli tahsil edilir.</p>
+
+    <h3>5.4 Ücretsiz Deneme</h3>
+    <p>Uygun kullanıcılar <strong>7 günlük ücretsiz deneme</strong> alır. Deneme süresi sona ermeden iptal edilmediği takdirde ücretli aboneliğe dönüşür. Deneme sırasında iptal ederseniz, deneme süresi sonuna kadar Pro özelliklerine erişiminiz devam eder; ardından aboneliğiniz yenilenmez ve sizden ücret alınmaz.</p>
+
+    <h3>5.5 Aboneliği Yönetme veya İptal Etme</h3>
+    <ul>
+      <li><span class="platform-note platform-ios">iOS</span> Aboneliğinizi <strong>iOS Ayarlar → [Adınız] → Abonelikler → WordRune</strong> üzerinden yönetebilir veya iptal edebilirsiniz. İptal, mevcut faturalama döneminin sonunda yürürlüğe girer.</li>
+      <li><span class="platform-note platform-android">Android</span> Aboneliğinizi <strong>Google Play → Hesap → Abonelikler → WordRune</strong> üzerinden yönetebilir veya iptal edebilirsiniz. İptal, mevcut faturalama döneminin sonunda yürürlüğe girer.</li>
+    </ul>
+
+    <h3>5.6 İadeler</h3>
+    <p>Abonelik ödemelerinin iadeleri ilgili platform tarafından işlenir:</p>
+    <ul>
+      <li><span class="platform-note platform-ios">iOS</span> İade talepleri Apple'a <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a> üzerinden iletilmelidir. WordRune, App Store satın alımları için doğrudan iade gerçekleştiremez.</li>
+      <li><span class="platform-note platform-android">Android</span> İade talepleri Google Play üzerinden iletilmelidir. WordRune, Google Play satın alımları için doğrudan iade gerçekleştiremez.</li>
+    </ul>
+
+    <h3>5.7 Satın Alımları Geri Yükleme</h3>
+    <p>Uygulamayı yeniden kurarsanız veya yeni bir cihazda oturum açarsanız, WordRune Pro ekranındaki <strong>"Satın Alımları Geri Yükle"</strong> butonuna dokunarak aktif aboneliğinizi geri yükleyebilirsiniz.</p>
+
+    <h2>6. Reklamlar</h2>
+    <p>WordRune'un ücretsiz sürümü Google AdMob aracılığıyla reklam gösterir. Ücretsiz sürümü kullanarak Uygulama içinde reklam gösterilmesine onay vermiş olursunuz. WordRune Pro aboneleri reklam görmez. Reklam verileri hakkında detaylar için <a href="index.html">Gizlilik Politikamıza</a> bakın.</p>
+
+    <h2>7. Fikri Mülkiyet</h2>
+    <p>WordRune ve içeriği (metin, grafik, logo, ses, video, yazılım, kelime veritabanları ve çalışma materyalleri dahil ancak bunlarla sınırlı olmamak üzere) bize veya lisans verenlerimize aittir ve telif hakkı, ticari marka ve diğer fikri mülkiyet yasaları ile korunmaktadır. Önceden yazılı iznimiz olmaksızın kopyalayamaz, değiştiremez, dağıtamaz veya türev çalışmalar oluşturamazsınız.</p>
+
+    <h2>8. Kullanıcı Tarafından Oluşturulan İçerik</h2>
+    <p>Uygulama içinde özel kelime listeleri veya başka içerik oluşturursanız, bu içeriğin sahibi sizsinizdir. Uygulamayı kullanarak, içeriğinizi yalnızca size hizmet sunmak amacıyla barındırmamız, depolamamız ve görüntülememiz için münhasır olmayan, telifsiz bir lisans vermiş olursunuz.</p>
+
+    <h2>9. Fesih</h2>
+    <p>Bu Koşulların ihlali veya başka herhangi bir nedenle, bildirimli veya bildirimsiz olarak Uygulamaya erişiminizi askıya alabilir veya sonlandırabiliriz. Uygulama içinden hesabınızı silerek istediğiniz zaman hesabınızı sonlandırabilirsiniz (<a href="delete.html">Hesap Silme sayfamıza</a> bakın). Hesabınızın sonlandırılması, kullanılmayan abonelik dönemi için iade hakkı doğurmaz.</p>
+
+    <h2>10. Sorumluluk Reddi</h2>
+    <p>UYGULAMA "OLDUĞU GİBİ" VE "MEVCUT OLDUĞU ŞEKİLDE" SUNULUR; AÇIK VEYA ZIMNİ HİÇBİR GARANTİ VERİLMEZ. UYGULAMANIN KESİNTİSİZ, HATASIZ ÇALIŞACAĞINI VEYA KUSURLARIN GİDERİLECEĞİNİ GARANTİ ETMEYİZ. Uygulamanın kullanımı tamamen kendi sorumluluğunuzdadır.</p>
+
+    <h2>11. Sorumluluğun Sınırlandırılması</h2>
+    <p>YÜRÜRLÜKTEKİ YASALARIN İZİN VERDİĞİ AZAMİ ÖLÇÜDE, HİÇBİR DURUMDA WORDRUNE; UYGULAMANIN KULLANIMINIZDAN KAYNAKLANAN HERHANGİ BİR DOLAYLI, ARIZİ, ÖZEL, SONUÇ NİTELİĞİNDE VEYA CEZAİ ZARARDAN VEYA HERHANGİ BİR KAR YA DA GELİR KAYBINDAN SORUMLU OLMAYACAKTIR. Bu Koşullardan veya Uygulamadan kaynaklanan herhangi bir talep için toplam sorumluluğumuz, son 12 ay içinde bize ödediğiniz tutarı veya bir aylık abonelik bedelini (hangisi büyükse) aşmayacaktır.</p>
+
+    <h2>12. Bu Koşullardaki Değişiklikler</h2>
+    <p>Bu Koşulları zaman zaman güncelleyebiliriz. Üst kısımdaki "Son Güncelleme" tarihi en son sürümü yansıtır. Önemli değişiklikler Uygulama içinden veya e-posta ile bildirilir. Değişikliklerden sonra Uygulamayı kullanmaya devam etmeniz, güncellenmiş Koşulları kabul ettiğiniz anlamına gelir.</p>
+
+    <h2>13. Geçerli Hukuk</h2>
+    <p>Bu Koşullar, kanunlar ihtilafı ilkeleri dikkate alınmaksızın Türkiye Cumhuriyeti yasalarına tabidir. Tüm uyuşmazlıklar İstanbul, Türkiye yetkili mahkemelerinde çözülecektir; ancak yargı bölgenizin emredici tüketici koruma yasaları aksini öngörüyorsa bu hüküm uygulanmaz.</p>
+
+    <h2>14. Apple'a Özel Şartlar (iOS)</h2>
+    <p><span class="platform-note platform-ios">Yalnızca iOS</span></p>
+    <ul>
+      <li>Bu Koşullar yalnızca sizinle WordRune arasında akdedilmiştir, Apple ile değil. Apple, Uygulama veya içeriğinden sorumlu değildir.</li>
+      <li>Apple'ın Uygulamaya ilişkin herhangi bir bakım veya destek hizmeti sunma yükümlülüğü yoktur.</li>
+      <li>Apple, sizin veya üçüncü tarafın Uygulamaya veya Uygulamanın bulundurulması/kullanılmasına ilişkin taleplerinden sorumlu değildir.</li>
+      <li>Apple ve iştiraklerinin bu Koşulların üçüncü taraf yararlanıcıları olduğunu ve bu Koşulları size karşı uygulama hakkına sahip olduklarını kabul edersiniz.</li>
+      <li>ABD Hükümeti ambargosuna tabi bir ülkede bulunmadığınızı ve ABD Hükümeti'nin yasaklı veya kısıtlı taraflar listesinde olmadığınızı beyan edersiniz.</li>
+    </ul>
+
+    <h2>15. İletişim</h2>
+    <div class="contact-card">
+      <p>Bu Koşullar veya başka sorularınız için:</p>
+      <p><strong>E-posta:</strong> <a href="mailto:yapayakil38@gmail.com">yapayakil38@gmail.com</a></p>
+      <p style="margin-bottom: 0;"><strong>Geliştirici:</strong> WordRune Ekibi</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 WordRune. All rights reserved. &nbsp;·&nbsp; <a href="index.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="delete.html">Account Deletion</a></p>
+  </footer>
+</div>
+
+<script>
+  function switchLang(lang) {
+    document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+    document.getElementById('lang-tr').classList.toggle('active', lang === 'tr');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
+    document.documentElement.lang = lang;
+    try { localStorage.setItem('wordrune_lang', lang); } catch (e) {}
+  }
+  try {
+    const saved = localStorage.getItem('wordrune_lang');
+    if (saved === 'tr') switchLang('tr');
+    else if (!saved && (navigator.language || '').toLowerCase().startsWith('tr')) switchLang('tr');
+  } catch (e) {}
+</script>
+</body>
+</html>
