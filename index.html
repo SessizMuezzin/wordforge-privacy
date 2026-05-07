@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="robots" content="index, follow" />
 <title>Privacy Policy — WordRune</title>
-<meta name="description" content="WordRune Privacy Policy — How we collect, use, and protect your personal data on iOS." />
+<meta name="description" content="WordRune Privacy Policy — How we collect, use, and protect your personal data on iOS and Android." />
 <style>
   :root {
     --bg: #0f0f17;
@@ -75,6 +75,14 @@
     border-left: 3px solid var(--accent); border-radius: var(--radius);
     padding: 16px 18px; margin: 20px 0;
   }
+  .platform-note {
+    display: inline-block; font-size: 11px; font-weight: 600;
+    padding: 2px 8px; border-radius: 999px; margin-right: 6px;
+    text-transform: uppercase; letter-spacing: 0.04em;
+  }
+  .platform-ios { background: rgba(167, 139, 250, 0.15); color: var(--accent); }
+  .platform-android { background: rgba(61, 220, 132, 0.15); color: #3DDC84; }
+  .platform-both { background: rgba(160, 160, 184, 0.15); color: var(--text-dim); }
   .contact-card {
     background: var(--surface); border: 1px solid var(--border);
     border-radius: var(--radius); padding: 20px; margin-top: 24px;
@@ -112,12 +120,12 @@
   <!-- ============ ENGLISH ============ -->
   <section id="lang-en" class="lang-section active">
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective Date: May 7, 2026 &nbsp;·&nbsp; Last Updated: May 7, 2026</p>
+    <p class="meta">Effective Date: May 7, 2026 &nbsp;·&nbsp; Last Updated: May 7, 2026 &nbsp;·&nbsp; Applies to iOS and Android</p>
 
-    <p>This Privacy Policy describes how <strong>WordRune</strong> ("we", "our", or "the App") collects, uses, stores, and protects your personal information when you use our iOS application. By using WordRune, you agree to the practices described in this policy.</p>
+    <p>This Privacy Policy describes how <strong>WordRune</strong> ("we", "our", or "the App") collects, uses, stores, and protects your personal information when you use our iOS or Android applications. By using WordRune, you agree to the practices described in this policy.</p>
 
     <div class="callout">
-      <strong>Quick summary:</strong> We collect only the information necessary to provide the vocabulary learning service. We do not sell your data, do not show ads, and do not track you across other apps or websites. You can delete your account and all associated data at any time from within the app.
+      <strong>Quick summary:</strong> We collect only the information necessary to provide the vocabulary learning service and to display advertisements. We do not sell your data. You can delete your account and all associated data at any time from within the app. On iOS, you control whether ads are personalized through Apple's App Tracking Transparency prompt.
     </div>
 
     <h2>1. Information We Collect</h2>
@@ -142,10 +150,19 @@
       <li>Application settings and preferences (language, daily goal, haptic feedback)</li>
     </ul>
 
-    <h3>1.3 Technical Information</h3>
+    <h3>1.3 Advertising and Identifier Information</h3>
+    <p>WordRune displays advertisements through Google AdMob on both iOS and Android. To support advertising, the following identifiers may be processed:</p>
+    <ul>
+      <li><span class="platform-note platform-ios">iOS</span> <strong>Apple Advertising Identifier (IDFA)</strong> — accessed only if you grant permission via the App Tracking Transparency (ATT) prompt</li>
+      <li><span class="platform-note platform-android">Android</span> <strong>Google Advertising ID (GAID)</strong> — used for ad delivery and frequency capping</li>
+      <li><span class="platform-note platform-both">Both</span> Coarse device information (device model, operating system, country, language) used by AdMob to deliver relevant ads</li>
+    </ul>
+    <p>If you decline tracking on iOS, you will continue to see ads, but they will be non-personalized (contextual only).</p>
+
+    <h3>1.4 Technical Information</h3>
     <p>For diagnostic and service improvement purposes, we may automatically collect:</p>
     <ul>
-      <li>Device type and operating system version (iOS)</li>
+      <li>Device type and operating system version</li>
       <li>App version and language settings</li>
       <li>Anonymous usage statistics (which screens are visited, feature usage)</li>
       <li>Crash logs and error reports</li>
@@ -154,55 +171,69 @@
     <p><strong>We do not collect:</strong> precise location, contacts, photos, microphone recordings, health data, or any sensitive personal information beyond what is described above.</p>
 
     <h2>2. How We Use Your Information</h2>
-    <p>We use your information solely for the following purposes:</p>
+    <p>We use your information for the following purposes:</p>
     <ul>
       <li>To create, authenticate, and maintain your account</li>
       <li>To save and synchronize your learning progress across devices</li>
       <li>To personalize the learning experience based on your level and history</li>
+      <li>To display advertisements (personalized or non-personalized depending on your consent)</li>
       <li>To diagnose technical issues and improve app stability</li>
       <li>To respond to your support requests</li>
       <li>To comply with legal obligations</li>
     </ul>
 
     <h2>3. Third-Party Services</h2>
-    <p>WordRune uses the following Google Firebase services to operate. These services are bound by their own privacy policies:</p>
+    <p>WordRune relies on the following third-party services. Each service has its own privacy policy:</p>
+
+    <h3>Google Firebase <span class="platform-note platform-both">iOS &amp; Android</span></h3>
     <ul>
       <li><strong>Firebase Authentication</strong> — manages secure sign-in</li>
       <li><strong>Cloud Firestore</strong> — stores your learning data and progress</li>
       <li><strong>Firebase Crashlytics</strong> (if enabled) — collects anonymized crash reports</li>
       <li><strong>Firebase Analytics</strong> (if enabled) — collects anonymized usage statistics</li>
     </ul>
-    <p>Firebase services are operated by Google LLC. Learn more at <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a> and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+    <p>Reference: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a> · <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></p>
 
-    <p><strong>The iOS version of WordRune does not contain advertisements, third-party trackers, or analytics SDKs other than those listed above.</strong></p>
+    <h3>Google AdMob <span class="platform-note platform-both">iOS &amp; Android</span></h3>
+    <p>We use Google AdMob to display advertisements within the app. AdMob may collect device identifiers (IDFA on iOS — with your consent only — and GAID on Android), IP address, and ad interaction data to deliver and measure ads.</p>
+    <p>Reference: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">How Google uses information from sites or apps that use our services</a> · <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob &amp; Privacy</a></p>
 
-    <h2>4. App Tracking Transparency (Apple)</h2>
-    <p>WordRune does <strong>not</strong> track you across other companies' apps or websites. We do not use the Apple Advertising Identifier (IDFA), and we do not require the App Tracking Transparency permission.</p>
+    <h2>4. App Tracking Transparency (iOS)</h2>
+    <p><span class="platform-note platform-ios">iOS only</span> When you launch WordRune on iOS, you will see Apple's standard App Tracking Transparency (ATT) prompt asking for permission to access your device's advertising identifier (IDFA). Your choice determines the type of ads you receive:</p>
+    <ul>
+      <li><strong>If you allow tracking:</strong> AdMob may deliver personalized ads based on your interests and use IDFA for measurement and frequency capping.</li>
+      <li><strong>If you decline tracking:</strong> AdMob will deliver non-personalized (contextual) ads only. IDFA is not accessed. You will not lose access to any app features.</li>
+    </ul>
+    <p>You can change your decision at any time via <strong>Settings → Privacy &amp; Security → Tracking</strong> on your iOS device.</p>
 
-    <h2>5. Data Storage and Security</h2>
+    <h2>5. Advertising Choices (Android)</h2>
+    <p><span class="platform-note platform-android">Android only</span> You can manage ad personalization on your Android device by going to <strong>Settings → Google → Ads</strong>. Options include opting out of personalized ads and resetting your Advertising ID.</p>
+
+    <h2>6. Data Storage and Security</h2>
     <p>Your data is stored on Google Firebase servers, which provide industry-standard encryption in transit (TLS/HTTPS) and at rest. Access to data is restricted to authorized systems and is protected by Firebase Security Rules. While we take reasonable measures to protect your information, no method of transmission over the Internet is 100% secure.</p>
 
-    <h2>6. Data Retention</h2>
+    <h2>7. Data Retention</h2>
     <p>We retain your personal data for as long as your account is active. When you delete your account:</p>
     <ul>
       <li>Your authentication record is removed immediately from Firebase Authentication.</li>
       <li>All personal data stored in Firestore (learning progress, custom words, settings) is permanently deleted within <strong>30 days</strong>.</li>
       <li>Anonymized, aggregated statistics may be retained for service improvement purposes.</li>
+      <li>Advertising-related data is governed by Google's retention policies and is not stored by WordRune directly.</li>
     </ul>
 
-    <h2>7. Your Privacy Rights</h2>
+    <h2>8. Your Privacy Rights</h2>
     <p>Depending on your jurisdiction (GDPR — EU, CCPA — California, KVKK — Türkiye), you have the right to:</p>
     <ul>
       <li><strong>Access</strong> the personal data we hold about you</li>
       <li><strong>Correct</strong> inaccurate or incomplete data</li>
       <li><strong>Delete</strong> your account and associated data</li>
       <li><strong>Export</strong> your learning data in a portable format</li>
-      <li><strong>Withdraw consent</strong> at any time</li>
+      <li><strong>Withdraw consent</strong> at any time, including ad tracking consent</li>
       <li><strong>Lodge a complaint</strong> with your local data protection authority</li>
     </ul>
     <p>To exercise these rights, contact us at the email below.</p>
 
-    <h2>8. Account Deletion</h2>
+    <h2>9. Account Deletion</h2>
     <p>You can delete your account directly from within the app:</p>
     <ol>
       <li>Open WordRune and sign in</li>
@@ -211,16 +242,16 @@
     </ol>
     <p>Alternatively, you can request deletion by emailing us. See our dedicated <a href="delete.html">Account Deletion page</a> for details.</p>
 
-    <h2>9. Children's Privacy</h2>
-    <p>WordRune is rated 4+ on the App Store and is suitable for general audiences. We do not knowingly collect personal data from children under the age of 13 (or the equivalent minimum age in your jurisdiction) without verifiable parental consent. If you believe a child has provided us with personal data, please contact us so we can remove it.</p>
+    <h2>10. Children's Privacy</h2>
+    <p>WordRune is rated 4+ on the App Store and PEGI 3 / Everyone on Google Play, suitable for general audiences. We do not knowingly collect personal data from children under the age of 13 (or the equivalent minimum age in your jurisdiction) without verifiable parental consent. Personalized advertising is not directed at children. If you believe a child has provided us with personal data, please contact us so we can remove it.</p>
 
-    <h2>10. International Data Transfers</h2>
-    <p>Your data may be stored on Google Firebase servers located in the United States or other countries where Google operates data centers. By using the App, you consent to such international transfers. Google Firebase complies with applicable cross-border data transfer frameworks.</p>
+    <h2>11. International Data Transfers</h2>
+    <p>Your data may be stored on Google Firebase or AdMob servers located in the United States or other countries where Google operates data centers. By using the App, you consent to such international transfers. Google complies with applicable cross-border data transfer frameworks.</p>
 
-    <h2>11. Changes to This Privacy Policy</h2>
+    <h2>12. Changes to This Privacy Policy</h2>
     <p>We may update this Privacy Policy from time to time. The "Last Updated" date at the top of this page reflects the most recent version. Significant changes will be communicated through the app or by email. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
 
-    <h2>12. Contact Us</h2>
+    <h2>13. Contact Us</h2>
     <div class="contact-card">
       <p>If you have questions, concerns, or requests regarding your privacy, please contact us:</p>
       <p><strong>Email:</strong> <a href="mailto:yapayakil38@gmail.com">yapayakil38@gmail.com</a></p>
@@ -232,12 +263,12 @@
   <!-- ============ TURKISH ============ -->
   <section id="lang-tr" class="lang-section">
     <h1>Gizlilik Politikası</h1>
-    <p class="meta">Yürürlük Tarihi: 7 Mayıs 2026 &nbsp;·&nbsp; Son Güncelleme: 7 Mayıs 2026</p>
+    <p class="meta">Yürürlük Tarihi: 7 Mayıs 2026 &nbsp;·&nbsp; Son Güncelleme: 7 Mayıs 2026 &nbsp;·&nbsp; iOS ve Android için geçerlidir</p>
 
-    <p>Bu Gizlilik Politikası, <strong>WordRune</strong> ("biz", "uygulama") iOS uygulamasını kullandığınızda kişisel bilgilerinizi nasıl topladığımızı, kullandığımızı, sakladığımızı ve koruduğumuzu açıklar. WordRune'u kullanarak bu politikada belirtilen uygulamaları kabul etmiş olursunuz.</p>
+    <p>Bu Gizlilik Politikası, <strong>WordRune</strong> ("biz", "uygulama") iOS veya Android uygulamamızı kullandığınızda kişisel bilgilerinizi nasıl topladığımızı, kullandığımızı, sakladığımızı ve koruduğumuzu açıklar. WordRune'u kullanarak bu politikada belirtilen uygulamaları kabul etmiş olursunuz.</p>
 
     <div class="callout">
-      <strong>Kısa özet:</strong> Yalnızca kelime öğrenme hizmetini sunmak için gerekli bilgileri topluyoruz. Verilerinizi satmıyoruz, reklam göstermiyoruz ve sizi başka uygulama veya web sitelerinde takip etmiyoruz. Hesabınızı ve tüm verilerinizi uygulama içinden istediğiniz zaman silebilirsiniz.
+      <strong>Kısa özet:</strong> Yalnızca kelime öğrenme hizmetini sunmak ve reklam göstermek için gerekli bilgileri topluyoruz. Verilerinizi satmıyoruz. Hesabınızı ve tüm verilerinizi uygulama içinden istediğiniz zaman silebilirsiniz. iOS'ta, Apple'ın App Tracking Transparency (Uygulama İzleme Şeffaflığı) sorusu aracılığıyla reklamların kişiselleştirilip kişiselleştirilmeyeceğini kendiniz seçersiniz.
     </div>
 
     <h2>1. Topladığımız Bilgiler</h2>
@@ -262,10 +293,19 @@
       <li>Uygulama ayarları ve tercihler (dil, günlük hedef, dokunsal geri bildirim)</li>
     </ul>
 
-    <h3>1.3 Teknik Bilgiler</h3>
+    <h3>1.3 Reklam ve Tanımlayıcı Bilgileri</h3>
+    <p>WordRune, hem iOS hem de Android'de Google AdMob aracılığıyla reklam gösterir. Reklamcılığı desteklemek için aşağıdaki tanımlayıcılar işlenebilir:</p>
+    <ul>
+      <li><span class="platform-note platform-ios">iOS</span> <strong>Apple Reklam Tanımlayıcısı (IDFA)</strong> — yalnızca App Tracking Transparency (ATT) sorusu üzerinden izin verirseniz erişilir</li>
+      <li><span class="platform-note platform-android">Android</span> <strong>Google Reklam Kimliği (GAID)</strong> — reklam sunumu ve frekans sınırlaması için kullanılır</li>
+      <li><span class="platform-note platform-both">Her İkisi</span> AdMob'un ilgili reklamları sunmak için kullandığı genel cihaz bilgisi (cihaz modeli, işletim sistemi, ülke, dil)</li>
+    </ul>
+    <p>iOS'ta izlemeyi reddederseniz reklamları görmeye devam edersiniz, ancak bu reklamlar kişiselleştirilmemiş (yalnızca bağlamsal) olur.</p>
+
+    <h3>1.4 Teknik Bilgiler</h3>
     <p>Tanılama ve hizmet iyileştirme amacıyla otomatik olarak toplayabileceklerimiz:</p>
     <ul>
-      <li>Cihaz tipi ve işletim sistemi sürümü (iOS)</li>
+      <li>Cihaz tipi ve işletim sistemi sürümü</li>
       <li>Uygulama sürümü ve dil ayarları</li>
       <li>Anonim kullanım istatistikleri (hangi ekranlar ziyaret edildi, hangi özellikler kullanıldı)</li>
       <li>Çökme günlükleri ve hata raporları</li>
@@ -274,55 +314,69 @@
     <p><strong>Toplamadıklarımız:</strong> hassas konum, kişiler, fotoğraflar, mikrofon kayıtları, sağlık verileri veya yukarıda belirtilenler dışında herhangi bir hassas kişisel bilgi.</p>
 
     <h2>2. Bilgilerinizi Nasıl Kullanıyoruz</h2>
-    <p>Bilgileriniz yalnızca aşağıdaki amaçlarla kullanılır:</p>
+    <p>Bilgilerinizi aşağıdaki amaçlarla kullanırız:</p>
     <ul>
       <li>Hesabınızı oluşturmak, doğrulamak ve sürdürmek</li>
       <li>Öğrenme ilerlemenizi cihazlar arasında kaydetmek ve senkronize etmek</li>
       <li>Seviyenize ve geçmişinize göre öğrenme deneyimini kişiselleştirmek</li>
+      <li>Reklam göstermek (onayınıza bağlı olarak kişiselleştirilmiş veya kişiselleştirilmemiş)</li>
       <li>Teknik sorunları teşhis etmek ve uygulama kararlılığını iyileştirmek</li>
       <li>Destek taleplerinize yanıt vermek</li>
       <li>Yasal yükümlülüklere uymak</li>
     </ul>
 
     <h2>3. Üçüncü Taraf Hizmetler</h2>
-    <p>WordRune, çalışması için aşağıdaki Google Firebase hizmetlerini kullanır. Bu hizmetler kendi gizlilik politikalarına tabidir:</p>
+    <p>WordRune aşağıdaki üçüncü taraf hizmetleri kullanır. Her hizmetin kendi gizlilik politikası vardır:</p>
+
+    <h3>Google Firebase <span class="platform-note platform-both">iOS &amp; Android</span></h3>
     <ul>
       <li><strong>Firebase Authentication</strong> — güvenli oturum açmayı yönetir</li>
       <li><strong>Cloud Firestore</strong> — öğrenme verilerinizi ve ilerlemenizi saklar</li>
       <li><strong>Firebase Crashlytics</strong> (etkinse) — anonim çökme raporları toplar</li>
       <li><strong>Firebase Analytics</strong> (etkinse) — anonim kullanım istatistikleri toplar</li>
     </ul>
-    <p>Firebase hizmetleri Google LLC tarafından işletilmektedir. Daha fazla bilgi için: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Gizlilik</a> ve <a href="https://policies.google.com/privacy?hl=tr" target="_blank" rel="noopener">Google Gizlilik Politikası</a>.</p>
+    <p>Referans: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Gizlilik</a> · <a href="https://policies.google.com/privacy?hl=tr" target="_blank" rel="noopener">Google Gizlilik Politikası</a></p>
 
-    <p><strong>WordRune'un iOS sürümünde reklam, üçüncü taraf izleyici veya yukarıda listelenenler dışında analiz SDK'sı bulunmamaktadır.</strong></p>
+    <h3>Google AdMob <span class="platform-note platform-both">iOS &amp; Android</span></h3>
+    <p>Uygulama içinde reklam göstermek için Google AdMob'u kullanırız. AdMob, reklamları sunmak ve ölçmek için cihaz tanımlayıcıları (iOS'ta IDFA — yalnızca onayınızla — ve Android'de GAID), IP adresi ve reklam etkileşim verilerini toplayabilir.</p>
+    <p>Referans: <a href="https://policies.google.com/technologies/ads?hl=tr" target="_blank" rel="noopener">Hizmetlerimizi kullanan sitelerden veya uygulamalardan Google'ın bilgileri nasıl kullandığı</a> · <a href="https://support.google.com/admob/answer/6128543?hl=tr" target="_blank" rel="noopener">AdMob ve Gizlilik</a></p>
 
-    <h2>4. Uygulama İzleme Şeffaflığı (Apple ATT)</h2>
-    <p>WordRune sizi başka şirketlerin uygulama veya web sitelerinde <strong>takip etmez</strong>. Apple Reklam Tanımlayıcısı (IDFA) kullanmıyoruz ve Uygulama İzleme Şeffaflığı (App Tracking Transparency) izni gerektirmiyoruz.</p>
+    <h2>4. Uygulama İzleme Şeffaflığı (iOS)</h2>
+    <p><span class="platform-note platform-ios">Yalnızca iOS</span> WordRune'u iOS'ta açtığınızda, cihazınızın reklam tanımlayıcısına (IDFA) erişim izni isteyen Apple'ın standart App Tracking Transparency (ATT) sorusunu görürsünüz. Seçiminiz aldığınız reklamların türünü belirler:</p>
+    <ul>
+      <li><strong>İzin verirseniz:</strong> AdMob, ilgi alanlarınıza dayalı kişiselleştirilmiş reklamlar sunabilir ve ölçüm ile frekans sınırlaması için IDFA'yı kullanabilir.</li>
+      <li><strong>Reddederseniz:</strong> AdMob yalnızca kişiselleştirilmemiş (bağlamsal) reklamlar sunar. IDFA'ya erişilmez. Hiçbir uygulama özelliğine erişiminizi kaybetmezsiniz.</li>
+    </ul>
+    <p>Kararınızı istediğiniz zaman iOS cihazınızda <strong>Ayarlar → Gizlilik ve Güvenlik → İzleme</strong> üzerinden değiştirebilirsiniz.</p>
 
-    <h2>5. Veri Saklama ve Güvenlik</h2>
+    <h2>5. Reklam Tercihleri (Android)</h2>
+    <p><span class="platform-note platform-android">Yalnızca Android</span> Android cihazınızda reklam kişiselleştirmesini <strong>Ayarlar → Google → Reklamlar</strong> bölümünden yönetebilirsiniz. Seçenekler arasında kişiselleştirilmiş reklamlardan vazgeçmek ve Reklam Kimliğinizi sıfırlamak yer alır.</p>
+
+    <h2>6. Veri Saklama ve Güvenlik</h2>
     <p>Verileriniz Google Firebase sunucularında saklanır; bu sunucular endüstri standardı şifrelemeyi (aktarım sırasında TLS/HTTPS, dinlenmede şifreleme) sağlar. Verilere erişim yetkili sistemlerle sınırlıdır ve Firebase Güvenlik Kuralları ile korunur. Bilgilerinizi korumak için makul önlemler alıyoruz, ancak internet üzerinden hiçbir aktarım yöntemi %100 güvenli değildir.</p>
 
-    <h2>6. Veri Saklama Süresi</h2>
+    <h2>7. Veri Saklama Süresi</h2>
     <p>Hesabınız aktif olduğu sürece kişisel verilerinizi saklarız. Hesabınızı sildiğinizde:</p>
     <ul>
       <li>Kimlik doğrulama kaydınız Firebase Authentication'dan derhal kaldırılır.</li>
       <li>Firestore'da saklanan tüm kişisel veriler (öğrenme ilerlemesi, özel kelimeler, ayarlar) <strong>30 gün</strong> içinde kalıcı olarak silinir.</li>
       <li>Anonim, toplulaştırılmış istatistikler hizmet iyileştirme amacıyla saklanabilir.</li>
+      <li>Reklamla ilgili veriler Google'ın saklama politikalarına tabidir ve doğrudan WordRune tarafından saklanmaz.</li>
     </ul>
 
-    <h2>7. Gizlilik Haklarınız</h2>
+    <h2>8. Gizlilik Haklarınız</h2>
     <p>Bulunduğunuz yargı bölgesine bağlı olarak (KVKK — Türkiye, GDPR — AB, CCPA — California) aşağıdaki haklara sahipsiniz:</p>
     <ul>
       <li>Hakkınızda tuttuğumuz kişisel verilere <strong>erişim</strong></li>
       <li>Yanlış veya eksik verilerin <strong>düzeltilmesi</strong></li>
       <li>Hesabınızın ve ilişkili verilerinizin <strong>silinmesi</strong></li>
       <li>Öğrenme verilerinizin taşınabilir bir biçimde <strong>dışa aktarılması</strong></li>
-      <li>İstediğiniz zaman <strong>onayınızı geri çekme</strong></li>
+      <li>Reklam izleme onayı dahil, istediğiniz zaman <strong>onayınızı geri çekme</strong></li>
       <li>Yerel veri koruma kurumuna <strong>şikayet</strong> etme</li>
     </ul>
     <p>Bu haklarınızı kullanmak için aşağıdaki e-posta adresinden bize ulaşın.</p>
 
-    <h2>8. Hesap Silme</h2>
+    <h2>9. Hesap Silme</h2>
     <p>Hesabınızı doğrudan uygulama içinden silebilirsiniz:</p>
     <ol>
       <li>WordRune'u açın ve oturum açın</li>
@@ -331,16 +385,16 @@
     </ol>
     <p>Alternatif olarak, e-posta yoluyla silme talebinde bulunabilirsiniz. Detaylar için <a href="delete.html">Hesap Silme sayfamıza</a> bakın.</p>
 
-    <h2>9. Çocukların Gizliliği</h2>
-    <p>WordRune App Store'da 4+ yaş kategorisindedir ve genel kullanıcılara uygundur. Doğrulanabilir ebeveyn onayı olmadan 13 yaş altı (veya yargı bölgenizdeki eşdeğer minimum yaş) çocuklardan bilerek kişisel veri toplamayız. Bir çocuğun bize kişisel veri sağladığını düşünüyorsanız, lütfen bizimle iletişime geçin.</p>
+    <h2>10. Çocukların Gizliliği</h2>
+    <p>WordRune App Store'da 4+ ve Google Play'de PEGI 3 / Herkes yaş kategorisindedir, genel kullanıcılara uygundur. Doğrulanabilir ebeveyn onayı olmadan 13 yaş altı (veya yargı bölgenizdeki eşdeğer minimum yaş) çocuklardan bilerek kişisel veri toplamayız. Kişiselleştirilmiş reklamlar çocuklara yönlendirilmez. Bir çocuğun bize kişisel veri sağladığını düşünüyorsanız, lütfen bizimle iletişime geçin.</p>
 
-    <h2>10. Uluslararası Veri Aktarımları</h2>
-    <p>Verileriniz Google Firebase'in Amerika Birleşik Devletleri veya Google'ın veri merkezleri bulunan diğer ülkelerdeki sunucularında saklanabilir. Uygulamayı kullanarak bu uluslararası aktarımlara onay vermiş olursunuz. Google Firebase, geçerli sınır ötesi veri aktarım çerçevelerine uyum sağlar.</p>
+    <h2>11. Uluslararası Veri Aktarımları</h2>
+    <p>Verileriniz Google Firebase veya AdMob'un Amerika Birleşik Devletleri veya Google'ın veri merkezleri bulunan diğer ülkelerdeki sunucularında saklanabilir. Uygulamayı kullanarak bu uluslararası aktarımlara onay vermiş olursunuz. Google geçerli sınır ötesi veri aktarım çerçevelerine uyum sağlar.</p>
 
-    <h2>11. Bu Politikadaki Değişiklikler</h2>
+    <h2>12. Bu Politikadaki Değişiklikler</h2>
     <p>Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Sayfanın üst kısmındaki "Son Güncelleme" tarihi en güncel sürümü yansıtır. Önemli değişiklikler uygulama içinden veya e-posta ile bildirilir. Değişikliklerden sonra uygulamayı kullanmaya devam etmeniz, güncellenmiş politikayı kabul ettiğiniz anlamına gelir.</p>
 
-    <h2>12. İletişim</h2>
+    <h2>13. İletişim</h2>
     <div class="contact-card">
       <p>Gizliliğinizle ilgili soru, endişe veya talepleriniz için bizimle iletişime geçin:</p>
       <p><strong>E-posta:</strong> <a href="mailto:yapayakil38@gmail.com">yapayakil38@gmail.com</a></p>
